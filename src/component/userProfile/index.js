@@ -71,7 +71,7 @@ export default function UserProfile() {
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>{" "}
-                  John Smith
+                  Ishimdar Ahamad
                 </li>
                 <li>
                   <svg
@@ -89,7 +89,7 @@ export default function UserProfile() {
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>{" "}
-                  Toranto, Canada
+                  A-101, Sector-52, Noida, U.P. India
                 </li>
                 <li>
                   <svg
@@ -107,7 +107,7 @@ export default function UserProfile() {
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>{" "}
-                  johnsmit07@gmail.com
+                  ahamadishimdar@gmail.com
                 </li>
                 <li>
                   <svg
@@ -134,7 +134,7 @@ export default function UserProfile() {
                     <line x1="8" y1="2" x2="8" y2="6"></line>
                     <line x1="3" y1="10" x2="21" y2="10"></line>
                   </svg>{" "}
-                  28 Years Old
+                  26 Nov 1990
                 </li>
                 <li>
                   <svg
@@ -151,7 +151,7 @@ export default function UserProfile() {
                   >
                     <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>{" "}
-                  +98 987 778 7676{" "}
+                  +91 8860792664{" "}
                 </li>
                 <li>
                   <svg
@@ -172,7 +172,7 @@ export default function UserProfile() {
                     <line x1="16" y1="17" x2="8" y2="17"></line>
                     <polyline points="10 9 9 9 8 9"></polyline>
                   </svg>{" "}
-                  United States
+                  India
                 </li>
               </ul>
             </div>
@@ -766,7 +766,8 @@ export default function UserProfile() {
         </div>
 
         <div className="contact-us">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80857844595!2d-79.51814399835!3d43.71840381259961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1586433312399!5m2!1sen!2sin" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80857844595!2d-79.51814399835!3d43.71840381259961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1586433312399!5m2!1sen!2sin" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4916170828296!2d77.36366297451758!3d28.585024975690665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59b4f93837f%3A0x81711c86cc895b5f!2sA101%2C%20Block%20A%2C%20Sector%2052%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1713623321069!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         

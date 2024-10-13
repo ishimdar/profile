@@ -62,7 +62,7 @@ export default function UserProfile() {
                 <div className=" col-md-12">
                   <ul className="btn-link">
                     <li className="hire">
-                      <a href="javascript:void(0)" onClick={(e) => handleClickOpenMail()}>
+                      <a href="" onClick={(e) => handleClickOpenMail()}>
                         <i className="fas fa-paper-plane"></i> Hire Me
                       </a>
                     </li>

@@ -1,9 +1,21 @@
-import profileImg from "../../assets/images/pf2.jpg";
+// import profileImg from "../../assets/images/pf2.jpg";
+import profileImg from "../../assets/images/pic.png";
 
 import "../../assets/scss/style.scss";
 import "./index.css";
+// import resume from "../../assets/download/Ishimdar-Developer.doc"
+import resume from "../../assets/download/Ishimdar-Developer.pdf";
 
 export default function UserProfile() {
+  const handleClickDownload = (e) => {
+    e.preventDefault();
+    alert("as");
+  };
+
+  const handleClickOpenMail = (e) => {
+    window.location = "mailto:ahamadishimdar@gmail.com";
+  }
+  
   return (
     <div className="col-lg-12">
       <div className="profile-detail">
@@ -22,16 +34,27 @@ export default function UserProfile() {
           </div>
           <div className="col-md-8 about-detail">
             <div className="detal-jumbo">
-              <h3>Hellow I'm Web Designer / Developer</h3>
+              <h3>Hello I'm Frontend / Ui Developer with ReactJs/AngularJs</h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries,text ever since the 1500s, when
-                an unknown printer took a galley of type and scrambled it to
-                make a type specimen book. It has survived not only five
-                centuries,
+                Hello! I'm Ishimdar Ahamad, a passionate frontend developer
+                specializing in React. With 9.5 years of experience in web
+                development, I thrive on creating elegant user interfaces and
+                crafting seamless user experiences.
+              </p>
+              <p>
+                React.js: Proficient in building dynamic and interactive web
+                applications using React.js. Experienced in state management
+                with Redux and context API.
+              </p>
+              <p>
+                JavaScript/ES6+: Strong command over modern JavaScript,
+                including ES6+ features, to write clean, efficient, and
+                maintainable code.
+              </p>
+              <p>
+                HTML5 & CSS3: Expertise in semantic HTML and CSS for structuring
+                and styling web pages, along with knowledge of CSS preprocessors
+                like SASS/SCSS.
               </p>
             </div>
             <div className="links">
@@ -39,12 +62,12 @@ export default function UserProfile() {
                 <div className=" col-md-12">
                   <ul className="btn-link">
                     <li className="hire">
-                      <a href="">
+                      <a href="javascript:void(0)" onClick={(e) => handleClickOpenMail()}>
                         <i className="fas fa-paper-plane"></i> Hire Me
                       </a>
                     </li>
                     <li className="download">
-                      <a href="">
+                      <a href={resume} target="_blank">
                         <i className="fas fa-cloud-download-alt"></i> Download
                         Resume
                       </a>
@@ -186,13 +209,13 @@ export default function UserProfile() {
         <div className="skills row">
           <div className="col-md-3 col-6 skilcol">
             <div className="c100 p80 big">
-              <span>80%</span>
+              <span>70%</span>
               <div className="slice">
                 <div className="bar"></div>
                 <div className="fill"></div>
               </div>
             </div>
-            <h6>Angular JS</h6>
+            <h6>ReactJs</h6>
           </div>
           <div className="col-md-3 col-6 skilcol">
             <div className="c100 p75 big">
@@ -207,13 +230,13 @@ export default function UserProfile() {
           </div>
           <div className="col-md-3 col-6 skilcol">
             <div className="c100 p90 big">
-              <span>90%</span>
+              <span>70%</span>
               <div className="slice">
                 <div className="bar"></div>
                 <div className="fill"></div>
               </div>
             </div>
-            <h6>PHP</h6>
+            <h6>JavaScript</h6>
           </div>
           <div className="col-md-3 col-6 skilcol">
             <div className="c100 p85 big">
@@ -224,13 +247,13 @@ export default function UserProfile() {
               </div>
             </div>
 
-            <h6>Node JS</h6>
+            <h6>HTML5/CSS3</h6>
           </div>
         </div>
 
-        <div id="services" className="title-2 row no-margin">
+        {/* <div id="services" className="title-2 row no-margin">
           <h2>My Services</h2>
-        </div>
+        </div> */}
 
         <div className="services">
           <div className="service-row no-margin row">
@@ -455,7 +478,7 @@ export default function UserProfile() {
                 <i className="fas fa-bicycle"></i> Cycling
               </li>
               <li>
-                <i className="fas fa-futbol"></i> Football
+                <i className="fas fa-futbol"></i> Foosball
               </li>
               <li>
                 <i className="fas fa-film"></i> Movies
@@ -469,7 +492,8 @@ export default function UserProfile() {
             </ul>
           </div>
         </div>
-
+<br/>
+<br/>
         <div className="row right-title">
           <div className="col-sm-1 col-2 icob">
             <i className="fas fa-graduation-cap"></i>
@@ -501,7 +525,7 @@ export default function UserProfile() {
               </div>
               <div className="col-10 pl-0 drtg">
                 <b>Address</b>
-                <p>Toranto, Canada</p>
+                <p>A-101, Sector-52, Noida, U.P. India</p>
               </div>
             </div>
           </div>
@@ -525,7 +549,7 @@ export default function UserProfile() {
               </div>
               <div className="col-10 pl-0 drtg">
                 <b>Phone</b>
-                <p>+98 7878 776 743</p>
+                <p>+91 8860792664</p>
               </div>
             </div>
           </div>
@@ -550,7 +574,7 @@ export default function UserProfile() {
               </div>
               <div className="col-10 pl-0 drtg">
                 <b>Email </b>
-                <p>johnsmith007@gmail.com</p>
+                <p>ahamadishimdar@gmail.com</p>
               </div>
             </div>
           </div>
@@ -596,7 +620,7 @@ export default function UserProfile() {
               <ul className="cbp_tmtimeline">
                 <li>
                   <time className="cbp_tmtime">
-                    <span className="hidden">2020 - PRESENT</span>
+                    <span className="hidden">Aug 2022 - PRESENT</span>
                   </time>
 
                   <div className="cbp_tmicon">
@@ -606,18 +630,17 @@ export default function UserProfile() {
                   <div className="cbp_tmlabel empty">
                     {" "}
                     <span>
-                      <h4>Front-End Developer</h4>
+                      <h4>Module Lead in LTIMindtree</h4>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quidem voluptatibus, maiores suscipit sequi
-                        veritatis saepe aspernatur.
+                      Here I have worked on Healthcare and Construction projects. 
+                      In both projects, I have used ReactJS, Redux, Bootstrap, MUI, HTML5, CSS3, Responsiveness.
                       </p>
                     </span>{" "}
                   </div>
                 </li>
                 <li>
                   <time className="cbp_tmtime">
-                    <span>2018 - 2020</span>
+                    <span>Oct 2018 - Jul 2020</span>
                   </time>
 
                   <div className="cbp_tmicon bg-info">
@@ -625,44 +648,40 @@ export default function UserProfile() {
                   </div>
 
                   <div className="cbp_tmlabel">
-                    <h4>UI Developer</h4>
+                    <h4>UI Developer in FlowerAura</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quidem voluptatibus, maiores suscipit sequi veritatis
-                      saepe aspernatur.
+                    In this Project, I have worked on ReactJs, Redux, HTML5, CSS3. 
+                    Worked on page speed for SEO-friendly applications with responsiveness.
+                    Optimized the application's smooth and fast rendering.
                     </p>
                   </div>
                 </li>
                 <li>
                   <time className="cbp_tmtime" datetime="2017-11-03T13:22">
-                    <span>2015 -2017</span>{" "}
+                    <span>Apr 2016 - Oct 2018</span>{" "}
                   </time>
                   <div className="cbp_tmicon bg-green">
                     {" "}
                     <i className="fas fa-globe-africa"></i>
                   </div>
                   <div className="cbp_tmlabel">
-                    <h4>Web Development</h4>
+                    <h4>Product Engineer</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quidem voluptatibus, maiores suscipit sequi veritatis
-                      saepe aspernatur.
+                    Responsive HTML conversion with Dreamweaver Using CSS jQuery, java script, Jquery and AngularJs.
                     </p>
                   </div>
                 </li>
                 <li>
                   <time className="cbp_tmtime" datetime="2017-10-22T12:13">
-                    <span>2013 - 2015</span>
+                    <span>Aug 2014 - Apr 2016</span>
                   </time>
                   <div className="cbp_tmicon bg-blush">
                     <i className="fab fa-gripfire"></i>
                   </div>
                   <div className="cbp_tmlabel">
-                    <h4>Graphic Designer</h4>
+                    <h4>UI Developer in Qlique Mediatech Pvt. Ltd.</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quidem voluptatibus, maiores suscipit sequi veritatis
-                      saepe aspernatur.
+                    Responsive HTML conversion with Dreamweaver Using CSS jQuery, javascript, and Jquery.
                     </p>
                   </div>
                 </li>
@@ -691,7 +710,7 @@ export default function UserProfile() {
                   <div className="cbp_tmlabel empty">
                     {" "}
                     <span>
-                      <h4>Computer Engineering</h4>
+                      <h4>B.Tech (Information Technology)</h4>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Quidem voluptatibus, maiores suscipit sequi
@@ -700,7 +719,7 @@ export default function UserProfile() {
                     </span>{" "}
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <time className="cbp_tmtime">
                     <span>2008 - 2013</span>
                   </time>
@@ -717,37 +736,33 @@ export default function UserProfile() {
                       saepe aspernatur.
                     </p>
                   </div>
-                </li>
+                </li> */}
                 <li>
                   <time className="cbp_tmtime" datetime="2017-11-03T13:22">
-                    <span>2015 -2017</span>{" "}
+                    <span>2005 -2007</span>{" "}
                   </time>
                   <div className="cbp_tmicon bg-green">
                     {" "}
                     <i className="fas fa-school"></i>
                   </div>
                   <div className="cbp_tmlabel">
-                    <h4>High School</h4>
+                    <h4>10+2</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quidem voluptatibus, maiores suscipit sequi veritatis
-                      saepe aspernatur.
+                      PATEL MEMORIAL INTER COLLEGE, ATRAULIYA Azamgarh-22322
                     </p>
                   </div>
                 </li>
                 <li>
                   <time className="cbp_tmtime" datetime="2017-10-22T12:13">
-                    <span>2013 - 2015</span>
+                    <span>2003 - 2005</span>
                   </time>
                   <div className="cbp_tmicon bg-blush">
                     <i className="fas fa-chalkboard"></i>
                   </div>
                   <div className="cbp_tmlabel">
-                    <h4>Primary School</h4>
+                    <h4>10Th</h4>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quidem voluptatibus, maiores suscipit sequi veritatis
-                      saepe aspernatur.
+                      PATEL MEMORIAL INTER COLLEGE, ATRAULIYA Azamgarh-22322
                     </p>
                   </div>
                 </li>
@@ -757,20 +772,25 @@ export default function UserProfile() {
         </div>
 
         <div id="contactus" className="row right-title pt-4">
-            <div className="col-sm-1 col-2 icob">
-                <i className="fas fa-graduation-cap"></i>
-            </div>
-            <div className="col-sm-11 col-10 titb">
-                <h2>Contact Me</h2>
-            </div>
+          <div className="col-sm-1 col-2 icob">
+            <i className="fas fa-graduation-cap"></i>
+          </div>
+          <div className="col-sm-11 col-10 titb">
+            <h2>Contact Me</h2>
+          </div>
         </div>
 
         <div className="contact-us">
-            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80857844595!2d-79.51814399835!3d43.71840381259961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1586433312399!5m2!1sen!2sin" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> */}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4916170828296!2d77.36366297451758!3d28.585024975690665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59b4f93837f%3A0x81711c86cc895b5f!2sA101%2C%20Block%20A%2C%20Sector%2052%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1713623321069!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4916170828296!2d77.36366297451758!3d28.585024975690665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce59b4f93837f%3A0x81711c86cc895b5f!2sA101%2C%20Block%20A%2C%20Sector%2052%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1713623321069!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-
-        
       </div>
     </div>
   );

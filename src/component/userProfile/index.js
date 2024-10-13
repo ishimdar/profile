@@ -62,9 +62,9 @@ export default function UserProfile() {
                 <div className=" col-md-12">
                   <ul className="btn-link">
                     <li className="hire">
-                      <a href="" onClick={(e) => handleClickOpenMail()}>
+                      {/* <a href="" onClick={(e) => handleClickOpenMail()}>
                         <i className="fas fa-paper-plane"></i> Hire Me
-                      </a>
+                      </a> */}
                     </li>
                     <li className="download">
                       <a href={resume} target="_blank" rel="noopener noreferrer">

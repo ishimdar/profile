@@ -7,10 +7,10 @@ import "./index.css";
 import resume from "../../assets/download/Ishimdar-Developer.pdf";
 
 export default function UserProfile() {
-  const handleClickDownload = (e) => {
-    e.preventDefault();
-    alert("as");
-  };
+  // const handleClickDownload = (e) => {
+  //   e.preventDefault();
+  //   alert("as");
+  // };
 
   const handleClickOpenMail = (e) => {
     window.location = "mailto:ahamadishimdar@gmail.com";
@@ -67,7 +67,7 @@ export default function UserProfile() {
                       </a>
                     </li>
                     <li className="download">
-                      <a href={resume} target="_blank">
+                      <a href={resume} target="_blank" rel="noopener noreferrer">
                         <i className="fas fa-cloud-download-alt"></i> Download
                         Resume
                       </a>
@@ -789,6 +789,7 @@ export default function UserProfile() {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            title="myFrame"
           ></iframe>
         </div>
       </div>

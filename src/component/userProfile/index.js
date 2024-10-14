@@ -12,9 +12,9 @@ export default function UserProfile() {
   //   alert("as");
   // };
 
-  const handleClickOpenMail = (e) => {
-    window.location = "mailto:ahamadishimdar@gmail.com";
-  }
+  // const handleClickOpenMail = (e) => {
+  //   window.location = "mailto:ahamadishimdar@gmail.com";
+  // }
   
   return (
     <div className="col-lg-12">
